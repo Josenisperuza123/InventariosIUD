@@ -18,6 +18,8 @@ app.use('/tipoEquipo', require('./router/tipoEquipo'));
 app.use('/inventario', require('./router/inventario'));
 app.use('/autenticacion', require('./router/autenticacion'))
 
+
+
 // Start Server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

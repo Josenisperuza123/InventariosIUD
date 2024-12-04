@@ -7,6 +7,7 @@ const validarRolAdmin = (req, res, next) => {
     next();
 }
 
+
 module.exports = {
     validarRolAdmin
 }

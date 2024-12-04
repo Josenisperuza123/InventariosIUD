@@ -8,10 +8,12 @@ const generarJWT = (usuario) => {
         rol: usuario.rol,
         estado: usuario.estado
     };
+    
 
     const token = jwt.sign(payload, process.env.JWT_SECRET || '1234567', { expiresIn: '2h' });
     return token;
 };
+
 
 module.exports = {
     generarJWT
